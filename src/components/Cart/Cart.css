@@ -1,0 +1,28 @@
+.cart {
+    background: rgba(255, 153, 0, 0.3);
+    padding: 25px 45px;
+    position: sticky;
+    top: 0;
+}
+
+.cart h3 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #1C2B35;
+    margin-bottom: 50px;
+}
+
+.cart p {
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #2A414F;
+    margin-bottom: 25px;
+}
+
+.cart h6 {
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+    color: #0E161A;
+}
