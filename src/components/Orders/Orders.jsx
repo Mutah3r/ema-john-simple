@@ -8,10 +8,10 @@ import { deleteShoppingCart, removeFromDb } from '../../utilities/fakedb';
 const Orders = () => {
     const savedCart = useLoaderData();
     const [cart, setCart] = useState(savedCart);
-    // console.log(cart);
+    // console.log('cart inside orders',cart);
 
     const handleRemoveFromCart = (id) => {
-        const remaining = cart.filter(pd => pd.id !== id);
+        const remaining = cart.filter(pd => pd._id !== id);
         setCart(remaining);
         removeFromDb(id);
     }
@@ -26,7 +26,7 @@ const Orders = () => {
             <div className='review-container'>
                 {
                     cart.map(product => <ReviewItem
-                        key={product.id}
+                        key={product._id}
                         product={product}
                         handleRemoveFromCart = {handleRemoveFromCart}
                     />)
